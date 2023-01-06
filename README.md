@@ -1,5 +1,5 @@
 # ESP32-OTA-Pull
-An Arduino library to faciliate simple ESP32 "**pull**"-based OTA updates
+An Arduino library to facilitate simple ESP32 "**pull**"-based OTA updates
 
 ## "Pull" Design
 There are a number of good Arduino libraries out there for OTA ("Over The Air") firmware updates.  Example: [ArduinoOTA](https://github.com/jandrassy/ArduinoOTA) and [AsyncElegantOTA](https://github.com/ayushsharma82/AsyncElegantOTA).  These libraries use a "push" technology, wherein you identify a target device you'd like to update and push/upload a new firmware to it.
@@ -45,7 +45,7 @@ A more elaborate filter file might also constrain the update based on the "Board
 
 ## Getting started with ESP32-OTA-Pull
 1. Install the [ESP32-OTA-Pull](https://github.com/mikalhart/ESP32-OTA-Pull) and [ArduinoJson](https://github.com/bblanchon/ArduinoJson) libraries
-2. Make sure to choose partition scheme that includes OTA when you build your sketch.
+2. Make sure to choose a partition scheme that includes OTA when you build your sketch.
 3. Generate the new firmware binary using the Arduino IDE's **Sketch/Export Compiled Binary** menu item.
 4. Upload the firmware image .bin file to your webserver, e.g. "https://example.com/myimages/example.esp32_dev.v2.bin".
 5. Open a text editor and create a small JSON file like the one above---the example sketch shows you what it should contain---that points to and documents the .bin image(s) you uploaded in step 4.
