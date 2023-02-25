@@ -36,7 +36,7 @@ class ESP32OTAPull
 public:
     enum ActionType { DONT_DO_UPDATE, UPDATE_BUT_NO_BOOT, UPDATE_AND_BOOT };
 
-    String getVersion()
+    String GetVersion()
     {
         return CVersion;
     }
